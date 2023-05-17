@@ -1,3 +1,7 @@
+:root {
+  background: purple;
+}
+
 html {
   max-width: 720px;
 }
@@ -8,4 +12,41 @@ body {
 
 * {
   color: red;
+}
+
+h1 {
+  color: green;
+}
+
+.box {
+  background: #fff;
+}
+
+#user, .user {
+  color: blue;
+}
+
+h1, h2, button {
+  color: aqua;
+}
+
+h1.button {
+  color: black;
+  background: red;
+}
+
+div > p {
+  color: brown;
+}
+
+footer > .user {
+  color: chartreuse;
+}
+
+footer .child {
+  color: chartreuse;
+}
+
+h1 + p {
+  background: black;
 }

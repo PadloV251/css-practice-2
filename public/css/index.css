@@ -67,3 +67,45 @@ h1 + p {
 .item:nth-child(1) {
   color: purple;
 }
+
+.input-dark {
+  background: #979797;
+}
+
+.input-dark[required] {
+  background: #680505;
+}
+
+.input-dark[type="number"] {
+  background: #010757;
+}
+
+.small-img[alt~="small"] {
+  height: 500px;
+}
+
+button[class|="btn"] {
+  background: rgb(167, 8, 106);
+}
+
+a[class*="btn"] {
+  background: red;
+}
+
+a[class$="big"] {
+  background: rgb(184, 127, 5);
+}
+
+.btn::first-letter {
+  color: red;
+}
+
+.input-dark::placeholder {
+  color: darkgreen;
+}
+
+.big-text::before,
+.big-text::after {
+  content: "$$$";
+  color: blue;
+}

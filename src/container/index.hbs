@@ -2,7 +2,7 @@
 
 	{{! Завдання 2. Зробіть, щоб всі елементи на сторінці мали текст чорного кольору  }}
 
-	<body>
+	{{!-- <body>
 	{{! Завдання 3. Зробіть, щоб h1 мав Синій колір фону }}
 
 	<section class='m-5 card'>
@@ -525,4 +525,43 @@
 		</ul>
 		</div>
 	</div>
-	</section>
+	</section> --}}
+
+<div lang="fr" class="card p-5 m-5">
+	<a class="link" href="#test">Click me</a>
+</div>
+
+<div lang="en" id="test" class="card p-5 m-5">
+	<input type="text">
+	<button>Test</button>
+</div>
+
+<div class="p-5 m-5">
+	<button>Test</button>
+	<button disabled>Disabled Test</button>
+</div>
+
+<div class="p-5 m-5">
+	<input type="text" class="inp" readonly>
+	<div class="mt-5">
+		<div>
+			<input type="checkbox" checked>
+			<span>Test</span>
+		</div>
+		<div>
+			<input type="checkbox">
+			<span>Test</span>
+		</div>
+	</div>
+</div>
+
+<div class="p-5 m-5">
+	<div>
+		<input type="email" class="valid" placeholder="test">
+		<span>Test</span>
+	</div>
+
+	<div class="mt-5">
+		<input type="number" min="10" max="20" class="number">
+	</div>
+</div>

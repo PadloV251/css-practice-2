@@ -167,3 +167,19 @@
 h1 {
   text-shadow: 2px 2px 2px red;
 }
+
+.plans-card:nth-child(2) {
+  visibility: hidden;
+}
+
+p {
+  background: gray;
+  width: 200px;
+  height: 100px;
+
+  overflow: hidden;
+
+  text-overflow: ellipsis;
+
+  white-space: pre;
+}

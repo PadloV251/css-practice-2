@@ -1,47 +1,129 @@
-.card {
-  
-}
-
-.card > p {
+.task_1 > h1 {
   color: green;
-  -webkit-text-fill-color: red;
-  -webkit-text-stroke: 1px blue;
 }
 
-p:focus, p:active, p:hover {
-  -webkit-text-fill-color: rgb(33, 172, 148);
-  -webkit-text-stroke: 1px rgb(211, 62, 154);
+.task_1 > p {
+  color: rgb(255, 0, 0);
+}
 
+.task_1 > button {
+  border: 1px solid #000;
+}
+
+.task_2 > h1 {
   direction: rtl;
 }
 
-#test {
-  color: unset;
-  -webkit-text-fill-color: unset;
-  -webkit-text-stroke: unset;
-
-  text-align: center;
+.task_2 > p {
+  text-align: right;
 }
 
-span {
+.task_2 > button {
   text-transform: uppercase;
-  text-decoration: underline dotted red;
-  text-decoration-color: blue;
 }
 
-pre {
-  tab-size: 10px;
-  letter-spacing: normal;
+.task_3 > h1 {
+  writing-mode: vertical-lr;
 }
 
-* {
-  font-family: "Roboto", sans-serif;
+.task_3 > pre {
+  tab-size: 4;
 }
 
-span {
-  font-size: small;
+.task_3 > button {
+  letter-spacing: 2px;
+  text-decoration: underline;
 }
 
-.test {
-  display: none;
+.task_4 > main > h1 {
+  font-size: 50px;
+  font-style: "italic";
+}
+
+.task_4 > main > p {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 700;
+  font-display: swap;
+}
+
+.task_5 > div {
+  margin: 10px;
+  width: 100px;
+  height: 100px;
+  background: red;
+}
+
+.task_5 > button {
+  margin: 10px;
+  padding: 10px;
+  box-sizing: content-box;
+}
+
+.task_5 > input {
+  min-width: 150px;
+  min-height: 45px;
+  max-width: 300px;
+  max-height: 60px;
+  background: grey;
+}
+
+.task_5 > p {
+  visibility: hidden;
+}
+
+.task_6 > h1 {
+  border: 3px double blue;
+  margin: 10px;
+}
+
+.task_6 > div {
+  outline: 3px dashed red;
+}
+
+.task_6 > button {
+  border-radius: 25px;
+  box-shadow: 2px 2px 10px #888;
+}
+
+.task_7 > button {
+  box-shadow: 2px 2px 5px 10px #666;
+  line-height: 2;
+}
+
+.task_7 > p > strong {
+  vertical-align: top;
+  cursor: wait;
+}
+
+.task_8 > div {
+  visibility: hidden;
+}
+
+.task_8 > p {
+  max-height: 70px;
+  overflow: scroll;
+}
+
+.task_8 > h1 {
+  max-height: 50px;
+  overflow: clip;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.task_9 > h1 {
+  word-break: keep-all;
+  word-spacing: 30px;
+}
+
+.task_9 > div {
+  hyphens: manual;
+}
+
+.task_9 > p {
+  word-break: break-word;
+}
+
+.task_9 > textarea {
+  resize: none;
 }

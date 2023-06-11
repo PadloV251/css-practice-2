@@ -183,3 +183,23 @@ p {
 
   white-space: pre;
 }
+
+.hero-text {
+  padding: 40px;
+  color: green;
+  border-image-source: url(/img/dog.jpg);
+  border-image-width: 100px;
+  border-image-slice: 10;
+  border-image-repeat: space;
+  border-image-outset: 10px;
+}
+
+.page {
+  /* background-image: url(/img/dog.jpg);
+
+  background-repeat: no-repeat;
+
+  background-position: bottom;
+
+  background-size: contain; */
+}

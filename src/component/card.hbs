@@ -8,11 +8,11 @@
                 <span class="card-price-amount">${{price}}</span>
                 <span class="card-price-duration">/ mo</span>
             </div>
-            <div class="card-block">
+            <ul class="card-block">
                 {{#each features}}
-                    <span class="card-description-item">{{this}}</span>
+                    <li class="card-description-item">{{this}}</li>
                 {{/each}}
-            </div>
+            </ul>
             <div class="card-block">
                 <button class="btn {{#if @first}}btn-outline-primary{{else}}btn-primary{{/if}} card-button">{{button}}</button>
             </div>

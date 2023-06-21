@@ -1,3 +1,24 @@
+@keyframes fly {
+  from {
+    top: 0;
+    left: 0;
+  }
+  
+  25% {
+    top: 500;
+    left: 500;
+  }
+
+  50% {
+    left: 0;
+  }
+
+  to {
+    top: 0;
+    left: 0;
+  }
+}
+
 :root {
   --space-m: 12px;
   --space-xm: 16px;
@@ -95,6 +116,8 @@
   text-decoration: none;
 
   line-height: 100%;
+
+  transition: color 1s;
 }
 
 .nav-link:hover {
@@ -209,6 +232,8 @@
   text-decoration: none;
   padding: var(--space-m) var(--space-xm);
   border-radius: var(--border-radius);
+
+  transition: opacity 1s;
 }
 
 .card-button {
@@ -290,8 +315,8 @@
 }
 
 .modal {
-  position: sticky;
-  bottom: 24px;
+  position: fixed;
+  top: 200px;
   left: 200px;
 
   width: 600px;
@@ -306,6 +331,30 @@
   line-height: 150%;
 
   z-index: 2;
+
+  /* transition-property: top;
+  transition-duration: 3s;
+  transition-timing-function: cubic-bezier(0.6, 0.04, 0.98, 0.335);
+  transition-delay: 3s; */
+}
+
+.modal {
+  animation-name: fly;
+  animation-duration: 2s;
+
+  animation-timing-function: cubic-bezier(0.92, 0, 0.91, 0.66);
+
+  animation-delay: 5s;
+
+  animation-iteration-count: infinite;
+
+  animation-direction: reverse;
+
+  animation-fill-mode: forwards;
+}
+
+body:hover .modal {
+  animation-play-state: paused;
 }
 
 .modal-photo {

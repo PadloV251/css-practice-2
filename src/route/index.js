@@ -960,7 +960,6 @@ router.get('/template-7', function (req, res) {
 
 // ================================================================
 
-template-6
 router.get('/template-6', function (req, res) {
   // res.render генерує нам HTML сторінку
 
@@ -1110,5 +1109,8 @@ router.get('/template-6', function (req, res) {
           ]
         }
       ]
+    })
+    //                  ↑↑ сюди вводимо JSON дані
+  })
 // Підключаємо роутер до бек-енду
 module.exports = router

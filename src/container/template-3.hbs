@@ -12,28 +12,30 @@
 </header>
 
 {{#with hero}}
-    <div class="hero">
-        <div class="hero-content">
-            <h1 class="hero-title">
-                {{title}}
-            </h1>
-            <p class="hero-text">{{text}}</p>
-        </div>
-        <div class="hero-slider">
-            <div class="hero-slider-icon hero-slider-left">{{left}}</div>
-            <img src="{{photo}}" alt="Hero image" class="hero-photo">
-            <div class="hero-slider-icon hero-slider-right">{{right}}</div>
+    <div class="hero-container">
+        <div class="hero">
+            <div class="hero-content">
+                <h1 class="hero-title">
+                    {{title}}
+                </h1>
+                <p class="hero-text">{{text}}</p>
+            </div>
+            <div class="hero-slider">
+                <div class="hero-slider-icon hero-slider-left">{{left}}</div>
+                <img src="{{photo}}" alt="Hero image" class="hero-photo">
+                <div class="hero-slider-icon hero-slider-right">{{right}}</div>
+            </div>
         </div>
     </div>
 {{/with}}
 
-<input type="text" class="input">
+{{!-- <input type="text" class="input"> --}}
 
-<div class="modal">
+{{!-- <div class="modal">
     {{!-- <img src="{{hero.photo}}" alt="Hero image" class="modal-photo"> --}}
 
-    <div class="modal-text">{{hero.text}}</div>
-</div>
+    {{!-- <div class="modal-text">{{hero.text}}</div>
+</div> --}}
 
 <main class="blog">
     {{#each blog}}
@@ -66,3 +68,5 @@
         </div>
     {{/each}}
 </footer>
+
+<div class="test">test</div>

@@ -24,7 +24,7 @@
 
 	<body>
 		<div class="page page--dashboard">
-			<aside class="page__aside aside vertical">
+			<aside class="page__aside aside vertical vertical--big">
 				<div class="text aside__logo">
 					Sidebar
 				</div>
@@ -41,15 +41,11 @@
 						<span class="icon nav-button__icon" style="background-image: url(/svg/nav/grid.svg);"></span>
 						<span class="text text--light">Products</span>
 					</a>
-					<div class="field__block click">
+					<div class="relative click">
 						<div class="field field--select">
 							<span class="text text--light">Choose...</span>
 						</div>
 						<select class="field__select">
-							<option value="dog">Dog</option>
-							<option value="dog">Dog</option>
-							<option value="dog">Dog</option>
-							<option value="dog">Dog</option>
 							<option value="dog">Dog</option>
 							<option value="dog">Dog</option>
 							<option value="dog">Dog</option>
@@ -59,20 +55,102 @@
 			</aside>
 			<header class="header">
 				<div class="layout header__content text--small">
-					<div class="header__search">
+					<div class="header__search relative">
 						<input type="text" placeholder="Search" class="text field field--header">
 						<span class="icon header__icon-search" style="background-image: url(/svg/header/search.svg);"></span>
 						<span class="icon icon--header-settings icon--button icon--color-blue click" style="background-image: url(/svg/header/settings.svg);"></span>
 					</div>
 						<div class="header__link">
-							<img src="/svg/header/antenna.svg" class="icon icon--header-items icon--button icon--color-blue click">
-							<img src="/svg/header/symbols.svg" class="icon icon--header-items icon--button icon--color-blue click">
-							<img src="/svg/header/bell.svg" class="icon icon--header-items icon--button icon--color-blue click">
+							<img src="/svg/header/antenna.svg" class="icon icon--header-items icon--button icon--color-yellow-light click">
+							<img src="/svg/header/symbols.svg" class="icon icon--header-items icon--button icon--color-blue-light click">
+							<img src="/svg/header/bell.svg" class="icon icon--header-items icon--button icon--color-yellow-light click">
 						</div>
 				</div>
 			</header>
 			<main class="main">
-				<section class="box"></section>
+				<div class="layout">
+					<section class="box analytic__block">
+						<div class="analytic analytic--double analytic--purple">
+							<span class="icon analytic__button icon--button analytic--purple-dark click" style="background-image: url(/svg/analytic/order.svg);"></span>
+
+							<div class="relative vertical vertical--small">
+								<div class="analytic__title text text--light">$500.00</div>
+								<div class="text text--small text--lighter">Total earning</div>
+
+								<span class="icon analytic__arrow" style="background-image: url(/svg/analytic/purple-arrow.svg);"></span>
+							</div>
+						</div>
+
+						<div class="analytic analytic--double analytic--blue">
+							<span class="icon analytic__button icon--button icon--color-blue click" style="background-image: url(/svg/analytic/shopping.svg);"></span>
+
+							<div class="relative vertical vertical--small">
+								<div class="analytic__title text text--light">$961</div>
+								<div class="text text--small text--lighter">Total Order</div>
+							</div>
+						</div>
+						<div class="analytic analytic--blue analytic--row">
+							<span class="icon analytic__button icon--button icon--color-blue click" style="background-image: url(/svg/analytic/order.svg);"></span>
+
+							<div class="relative vertical vertical--small">
+								<div class="analytic__title-small text text--light">$203k</div>
+								<div class="text text--small text--lighter">Total Income</div>
+							</div>
+						</div>
+						<div class="analytic analytic--white analytic--row">
+							<span class="icon analytic__button icon--button icon--color-yellow-light click" style="background-image: url(/svg/analytic/shop.svg);"></span>
+
+							<div class="relative vertical vertical--small">
+								<div class="analytic__title-small text text--black text--bold">$203k</div>
+								<div class="text text--small text--gray">Total Income</div>
+							</div>
+						</div>
+					</section>
+				</div>
+
+				<section class="main__double">
+					<div class="purchase__list">
+						<div class="text text--heading divider">Purchase list</div>
+						<div class="vertical box__contact divider">
+							<div class="vertical vertical--small list__contacts">
+								<div class="text">ID437661</div>
+								<div class="text">May 11, 2023, 14:21</div>
+							</div>
+							<div class="vertical vertical--small list__contacts">
+								<div class="text">AirOn ProCam</div>
+								<div class="text">7/8 USB Type-C</div>
+							</div>
+							<div class="vertical vertical--small list__contacts">
+								<div class="text">132.32 EUR</div>
+								<div class="text text--warning">Not paid</div>
+							</div>
+							<div class="vertical vertical--small list__contacts">
+								<div class="text">Customer</div>
+								<div class="text">robin@com.de</div>
+							</div>
+						</div>
+						<div class="vertical box__contact">
+							<div class="vertical vertical--small list__contacts">
+								<div class="text">ID437661</div>
+								<div class="text">May 11, 2023, 14:21</div>
+							</div>
+							<div class="vertical vertical--small list__contacts">
+								<div class="text">PHILIPS Essential</div>
+								<div class="text">HD9200/90</div>
+							</div>
+							<div class="vertical vertical--small list__contacts">
+								<div class="text">543 USD</div>
+								<div class="text text-success">Pay by  Stripe</div>
+							</div>
+							<div class="vertical vertical--small list__contacts">
+								<div class="text">Customer</div>
+								<div class="text">dima@com.ua</div>
+							</div>
+						</div>
+					</div>
+						<div class="text text--heading">Payment</div>
+					
+				</section>
 			</main>
 		</div>
 	</body>

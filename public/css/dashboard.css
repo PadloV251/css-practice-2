@@ -166,6 +166,17 @@ body {
 		padding-bottom: var(--spacing-5);
 		border-bottom: 1px solid var(--color-light);;
 	}
+
+	.button {
+		border-radius: var(--radius-1);
+		width: 100%;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		gap: 10px;
+		align-self: stretch;
+		padding: var(--spacing-1) 0;
+	}
 }
 
 @layer element {
@@ -256,11 +267,42 @@ body {
 		grid-template-rows: 2fr;
 		padding: var(--spacing-5);
 		gap: var(--spacing-9);
+		height: 550px;
 	}
 
 	.box__contact {
 		grid-template-columns: 1fr 1fr 1fr 1fr;
 		padding-top: var(--spacing-5);
+	}
+
+	.purchase__list {
+		max-width: 1000px;
+		margin: 0 11%;
+	}
+
+	.main__payment {
+		width: 100%;
+		max-width: 400px;
+		margin: 0 -6%;
+	}
+
+	.checkbox__list {
+		padding-top: var(--spacing-5);
+	}
+
+	.field__contact {
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		grid-template-rows: 1fr;
+		gap: var(--spacing-5);
+		padding-top: var(--spacing-5);
+	}
+
+	.field__checkbox {
+		padding-top: var(--spacing-5);
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		gap: var(--spacing-5);
 	}
 }
 
@@ -397,6 +439,14 @@ body {
 		justify-content: flex-start;
 		gap: var(--spacing-2);
 	}
+
+	.button--color-primary {
+		background-color: var(--color-primary);
+	}
+
+	.input--width {
+		width: 100%;
+	}
 }
 
 @layer adaptive {
@@ -411,6 +461,30 @@ body {
 
 		.header {
 			display: none;
+		}
+
+		.analytic__block {
+			grid-template-columns: 1fr 1fr;
+		}
+	}
+
+	@media all and (width < 865px) {
+		.box__contact {
+			grid-template-columns: 1fr 1fr;
+		}
+
+		.field__contact {
+			grid-template-columns: 1fr;
+		}
+	}
+
+	@media all and (width < 670px) {
+		.box__contact {
+			grid-template-columns: 1fr;
+		}
+
+		.analytic--double {
+			
 		}
 	}
 }
